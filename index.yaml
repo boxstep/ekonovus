@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  ekonovus:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-06-21T13:58:18.832769249Z"
+    description: CronJob that fetches waste collection schedule from ekonovus.lt and
+      sends it to Home Assistant
+    digest: bfadb933299e833f8219843daee7cad6d33115bdfc08397c35d3f161ba06bace
+    name: ekonovus
+    type: application
+    urls:
+    - https://github.com/boxstep/ekonovus/releases/download/ekonovus-0.1.1/ekonovus-0.1.1.tgz
+    version: 0.1.1
+generated: "2026-06-21T13:58:18.832780165Z"
