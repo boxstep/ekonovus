@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "ekonovus.fullname" . }}-config
+  labels:
+    {{- include "ekonovus.labels" . | nindent 4 }}
+data:
+  ENDPOINT: {{ .Values.config.endpoint | quote }}
+  EMBED_KEY: {{ .Values.config.embedKey | quote }}
+  DATASET_ID: {{ .Values.config.datasetId | quote }}
+  REPORT_ID: {{ .Values.config.reportId | quote }}
+  VISUAL_ID: {{ .Values.config.visualId | quote }}
+  MODEL_ID: {{ .Values.config.modelId | quote }}
+  HA_WEBHOOK_URL: {{ .Values.config.haWebhookUrl | quote }}
+  ADDRESS: {{ .Values.config.address | quote }}
+  DISTRICT: {{ .Values.config.district | quote }}
+  GLASS_INVENTORY_NR: {{ .Values.config.glassInventoryNr | quote }}

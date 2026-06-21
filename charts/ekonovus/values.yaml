@@ -1,0 +1,20 @@
+schedule: "0 6 * * *"
+
+image:
+  repository: boxstep/ekonovus
+  tag: latest
+  pullPolicy: Always
+
+config:
+  endpoint: "https://wabi-west-europe-d-primary-api.analysis.windows.net/public/reports/querydata"
+  embedKey: "d86dc3d4-e915-4460-b12e-c925d3ae6c75"
+  datasetId: "90015897-045e-4f68-8f83-c40d1fc3bfc2"
+  reportId: "06fc8043-9afa-43d6-88cc-3a1e73aaf964"
+  visualId: "161c6ed98b10564c91b7"
+  modelId: "1026609"
+  haWebhookUrl: "https://ha.k3s-t.homelab.local/api/webhook/ekonovus_schedule"
+  address: ""
+  district: ""
+  glassInventoryNr: "52-S-39239 (Stiklas)"
+
+restartPolicy: Never
